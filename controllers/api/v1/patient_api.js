@@ -75,7 +75,7 @@ module.exports.AllReport=async function(req,res){
     }
 }
 
-module.exports.registerPatient=function(req,res){
+module.exports.registerPatient=async function(req,res){
     try{
         if(!req.body.name || !req.body.phone){
             return res.json(400,{
