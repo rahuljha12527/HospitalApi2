@@ -2,6 +2,8 @@ const express=require('express');
 
 const router=express.Router();
 
-router.use('/',require('./v1'));
+router.use('/v1',require('./v1'));
 
 module.exports=router;
+
+//wait 1 min

@@ -3,6 +3,7 @@ const app=express();
 const port=8000;
 const passport =require('passport');
 const passportJwt=require('passport-jwt')
+const passportjwtstrategy=require('./config/passport-jwt-strategy');
 const bodyParser=require('body-parser');
 
 const db=require('./config/mongoose');
