@@ -1,11 +1,13 @@
 const express=require('express');
 const app=express();
 const port=8000;
-
+const passport =require('passport');
+const passportJwt=require('passport-jwt')
+const bodyParser=require('body-parser');
 
 const db=require('./config/mongoose');
 
-const bodyParser=require('body-parser');
+app.use(passport.initialize());
 //middleware for connecting form  data into text
 app.use(express.urlencoded());
 app.use(bodyParser.json());
